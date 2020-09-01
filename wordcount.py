@@ -1,22 +1,15 @@
 import sys
 import string
+import re
 #take input of in and output file
 #no whitespace
 #case-insensitive
 
 
-
-#with open('declaration.txt', 'r') as f:
-	#all_lines = f.readlines()
-
-#if len(sys.argv) == 2:
 inputfile = sys.argv[1]
 outputfile = sys.argv[2]
 
 out_file = open(outputfile, 'w')
-
-
-
 
 
 f = open(inputfile, "r")
@@ -31,13 +24,11 @@ for line in f:
 
 	line = line.lower()
 
+	s = re.split('\W+', line)
 
+	s = filter(None, s)
 
-	line = line.translate(line.maketrans("", "", string.punctuation))
-
-	s = line.split(" ")
 	print(s)
-
 
 
 	for word in s:
@@ -51,10 +42,3 @@ for line in f:
 
 for key, value in sorted(wordsdict.items()):
 	print("{} : {}".format(key, value), file = out_file)
-
-#print(wordsdict, file = out_file)
-#out_file.close()
-
-
-#for key in list(d.keys()):
-#	print(key, ":", d[key])
