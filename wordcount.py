@@ -36,4 +36,4 @@ for line in f:
 
 #printing to output file
 for key, value in sorted(wordsdict.items()):
-	print("{} : {}".format(key, value), file = out_file)
+	print("{} {}".format(key, value), file = out_file)
