@@ -4,10 +4,7 @@ This program **wordcount.py** will take a text file as input and output a text f
 
 I grab the input and output file names using sys.argv. I open the file and read it line by line, removing new line characters then lowercasing everything and finally I use reg exp to strip the white space and punctuation. Finally I add all that to a dictionary and output the sorted dictionary to a text file.
 
-My program passed all test!
-
-# ----------------------------------------------------------------------
-
+### Program passed all tests!
 
 This repository contains the code for the python introduction lab. The
 purpose is to have a fairly simple python assignment that introduces
