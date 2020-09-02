@@ -1,4 +1,4 @@
-#Jerardo Velazquez
+# Jerardo Velazquez
 
 This program **wordcount.py** will take a text file as input and output a text file containing the occurrences of each word in that text file.
 
@@ -6,7 +6,7 @@ I grab the input and output file names using sys.argv. I open the file and read 
 
 My program passed all test!
 
-#----------------------------------------------------------------------
+# ----------------------------------------------------------------------
 
 
 This repository contains the code for the python introduction lab. The
